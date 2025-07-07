@@ -48,7 +48,7 @@ export const NavBar = () => {
           <NavbarItem>
             <Link to={"/contact"}>
               <Button color="primary" variant="shadow" radius="full">
-                Contáctanos
+                Contactanos
               </Button>
             </Link>
           </NavbarItem>

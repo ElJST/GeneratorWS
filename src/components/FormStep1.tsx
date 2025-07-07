@@ -181,7 +181,7 @@ export const FormStep1 = () => {
                 </ul>
               )}
               isInvalid={errorsPhone.length > 0}
-              label="Telefono"
+              label="Teléfono"
               labelPlacement="outside"
               name="phone"
               placeholder="Numero de teléfono"
