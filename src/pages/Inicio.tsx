@@ -37,13 +37,13 @@ export const Inicio = () => {
           <TextAnimate animation="blurIn">
             Rellena el formulario con los datos de tu negocio y genera tu página
             web personalizada en solo unos minutos. ¡Rápido, fácil y sin
-            complicaciones y con tecnologias modernas!
+            complicaciones y con tecnologías modernas!
           </TextAnimate>
         </p>
         <p className="sm:hidden text-base text-gray-600 text-center max-w-3xl px-4">
           <TextAnimate animation="blurIn">
             Rellena el formulario con los datos de tu negocio y genera tu página
-            web en solo unos minutos. ¡Con tecnologias modernas!
+            web en solo unos minutos. ¡Con tecnologías modernas!
           </TextAnimate>
         </p>
         <div className="relative flex items-center justify-center overflow-hidden">

@@ -54,7 +54,7 @@ export const FormStep1 = () => {
     } else if (name.length < 2 || name.length > 14) {
       newNameErrors.push("El nombre debe tener entre 2 y 14 caracteres.");
     } else if (!isNameValid(name)) {
-      newNameErrors.push("La primera letra del nombre debe ser Mayusculas.");
+      newNameErrors.push("La primera letra del nombre debe ser Mayúsculas.");
     }
 
     if (email.length == 0) {
@@ -68,10 +68,10 @@ export const FormStep1 = () => {
     }
 
     if (phone.length == 0) {
-      newPhoneErrors.push("Introduzca una numero de telefono.");
+      newPhoneErrors.push("Introduzca una número de teléfono.");
     } else if (!isPhoneValid(phone)) {
       newPhoneErrors.push(
-        "Introduzca una telefono valido, entre 7 a 15 digitos ( Ejemplo: +34612345678, 612345678 )."
+        "Introduzca un teléfono valido, entre 7 a 15 dígitos ( Ejemplo: +34612345678, 612345678 )."
       );
     }
 
@@ -101,7 +101,7 @@ export const FormStep1 = () => {
     <div className="w-full h-full rounded-xl">
       <section className="w-full h-[calc(100%-100px)]">
         <TextAnimate className="text-xl font-semibold text-center pt-2">
-          Informacion de tu empresa
+          Información de tu empresa
         </TextAnimate>
         <section className="flex flex-col md:flex-row px-4 gap-6 py-4 justify-center">
           <Form
@@ -164,7 +164,7 @@ export const FormStep1 = () => {
               label="Dirección"
               labelPlacement="outside"
               name="directions"
-              placeholder="Direccion"
+              placeholder="Dirección"
               type="text"
               size="sm"
               value={fields.directions}
@@ -184,7 +184,7 @@ export const FormStep1 = () => {
               label="Telefono"
               labelPlacement="outside"
               name="phone"
-              placeholder="Numero de telefono"
+              placeholder="Numero de teléfono"
               type="text"
               size="sm"
               value={fields.phone}

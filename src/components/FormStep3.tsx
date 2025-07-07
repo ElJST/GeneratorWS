@@ -41,21 +41,21 @@ export const FormStep3 = () => {
     const firstMayus = (value: string) => /^[A-Z].*$/.test(value);
 
     if (mision.length == 0) {
-      newErrorsMision.push("introduce alguna misión para tu empresa");
+      newErrorsMision.push("Introduce alguna misión para tu empresa");
     } else if (!firstMayus(mision)) {
-      newErrorsMision.push("La primera letra debe ser en Mayusculas.");
+      newErrorsMision.push("La primera letra debe ser en Mayúsculas.");
     } else if (mision.length <= 30) {
-      newErrorsMision.push("Minimo debes tener 30 digitos.");
+      newErrorsMision.push("Minimo debe tener 30 dígitos.");
     }
 
     if (descCorta.length == 0) {
       newErrorsDescCorta.push(
-        "introduce alguna breve descripción para tu empresa"
+        "Introduce alguna breve descripción para tu empresa"
       );
     } else if (!firstMayus(descCorta)) {
-      newErrorsDescCorta.push("La primera letra debe ser en Mayusculas.");
+      newErrorsDescCorta.push("La primera letra debe ser en Mayúsculas.");
     } else if (descCorta.length <= 35) {
-      newErrorsMision.push("Minimo debes tener 35 digitos.");
+      newErrorsMision.push("Minimo debe tener 35 dígitos.");
     }
 
     setErrorsMision(newErrorsMision);

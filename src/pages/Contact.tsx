@@ -73,10 +73,10 @@ export const Contact = () => {
 
             <Input
               isRequired
-              errorMessage="Introduzca un correo electronico"
+              errorMessage="Introduzca un correo electrónico"
               label="email"
               labelPlacement="outside"
-              placeholder="Correo electronico"
+              placeholder="Correo electrónico"
               type="email"
               size="sm"
               value={email}

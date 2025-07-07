@@ -47,25 +47,25 @@ export const FormStep2 = () => {
     if (estrategia.length == 0) {
       newErrorsEstrategia.push("Introduce alguna estrategia.");
     } else if (!firstMayus(estrategia)) {
-      newErrorsEstrategia.push("La primera letra debe ser en Mayusculas.");
+      newErrorsEstrategia.push("La primera letra debe ser en Mayúsculas.");
     } else if (estrategia.length <= 45) {
-      newErrorsEstrategia.push("Minimo debes tener una estrategia de 45 digitos.");
+      newErrorsEstrategia.push("Mínimo debes tener una estrategia de 45 dígitos.");
     }
 
     if (solucion.length == 0) {
-      newErrorsSolucion.push("Introduce alguna solucion.");
+      newErrorsSolucion.push("Introduce alguna solución.");
     } else if (!firstMayus(solucion)) {
-      newErrorsSolucion.push("La primera letra debe ser en Mayusculas.");
+      newErrorsSolucion.push("La primera letra debe ser en Mayúsculas.");
     } else if (solucion.length <= 45) {
-      newErrorsSolucion.push("Minimo debes tener una solución de 45 digitos.");
+      newErrorsSolucion.push("Minimo debes tener una solución de 45 dígitos.");
     }
 
     if (descLarga.length == 0) {
       newErrorsDescLarga.push("Introduce alguna descripción.");
     } else if (!firstMayus(descLarga)) {
-      newErrorsDescLarga.push("La primera letra debe ser en Mayusculas.");
+      newErrorsDescLarga.push("La primera letra debe ser en Mayúsculas.");
     } else if (descLarga.length <= 65) {
-      newErrorsDescLarga.push("Minimo debes tener una descripción de 65 digitos.");
+      newErrorsDescLarga.push("Minimo debes tener una descripción de 65 dígitos.");
     }
 
     setErrorsSolucion(newErrorsSolucion);
@@ -135,7 +135,7 @@ export const FormStep2 = () => {
               name="solucion"
               value={fields.solucion}
               onValueChange={handleChange("solucion")}
-              placeholder="Que solucion ofreces"
+              placeholder="Qué solución ofreces"
               type="text"
               size="sm"
               maxLength={60}
@@ -157,7 +157,7 @@ export const FormStep2 = () => {
               name="largeDescription"
               value={fields.descLarga}
               onValueChange={handleChange("descLarga")}
-              placeholder="Descripcion de tu empresa"
+              placeholder="Descripción de tu empresa"
               rows={2}
               maxRows={3}
               maxLength={220}
